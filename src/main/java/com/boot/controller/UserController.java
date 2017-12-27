@@ -1,8 +1,10 @@
-package com.boot.chapter2.sub;
+package com.boot.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.boot.model.ConfigBean;
 
 @RestController
 public class UserController {
@@ -12,6 +14,6 @@ public class UserController {
 
 	@RequestMapping("/")
 	public String hexo() {
-		return configBean.getName() + configBean.getWant();
+		return configBean.getName() + "test" + configBean.getWant();
 	}
 }

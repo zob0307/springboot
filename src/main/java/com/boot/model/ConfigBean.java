@@ -1,4 +1,4 @@
-package com.boot.chapter2.sub;
+package com.boot.model;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
