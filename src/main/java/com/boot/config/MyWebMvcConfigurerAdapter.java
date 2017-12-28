@@ -36,17 +36,17 @@ public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
 		registry.addViewController("/toLogin").setViewName("login");
 		super.addViewControllers(registry);
 	}
-	
-	
-    /**
-     * 拦截器
-     * @param registry
-     */
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        // addPathPatterns 用于添加拦截规则
-        // excludePathPatterns 用户排除拦截
-        registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").excludePathPatterns("/toLogin","/login");
-        super.addInterceptors(registry);
-}
+
+//	/**
+//	 * 拦截器
+//	 * 
+//	 * @param registry
+//	 */
+//	@Override
+//	public void addInterceptors(InterceptorRegistry registry) {
+//		// addPathPatterns 用于添加拦截规则
+//		// excludePathPatterns 用户排除拦截
+//		registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").excludePathPatterns("/toLogin", "/login");
+//		super.addInterceptors(registry);
+//	}
 }
